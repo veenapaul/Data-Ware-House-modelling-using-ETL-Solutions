@@ -31,6 +31,93 @@
 
 PROJECT STEP BY STEP
 --------------------
+Project Key
+----------
+
+One stop online platform for property investors, managers, owners, tenants and service providers. It will analyze the data sets across different platforms and provide the end user with a complete analysis about the Geographical location Property market 
+Tasks 
+
+•	Clean, standardise data
+
+•	Build a data warehouse with fact & dimension tables.
+
+•	Build SSRS and Power BI reports
+
+Results
+
+•	Choose city and suburb and distance, display transport/school/property value/rental value/crime rate within a particular distance/radius eg. 1, 5 km from the input suburb.
+
+•	Generate financial report eg. Rental incomes vs Expenses for landlords.
+
+•	Display forecasted property value within 1, 5 and 10-year value.
+
+Sprints
+-------
+Sprint 1: Standardise Dataset
+-----------------------------
+Given raw dataset, standardize datasets for public transport in Australia
+Given raw dataset, standardize datasets for local school.
+Given raw dataset, standardize dataset for Rental Median per suburb, city
+Given raw dataset, standardize the dataset for Median Property Value per suburb
+Given raw dataset, standardize the dataset for Crime rate of each suburb and city.
+
+Sprint 2: Design Datawarehouse & Build SSIS package
+---------------------------------------------------
+
+Using Suburb and City Dataset, design a Dim table - DimGeography with State / City / District / Postcode / Suburb / Lon / Lat.
+
+DimTransport: Load public transport data to StgTransport table
+
+DimState with DWStateKey, StateCode and StateName
+
+Design DimAuLocalSchool tables for Aus local school
+
+Design FactCrimeByYear
+
+Design FactSuburbRentalMedian
+
+Design Fact table – FactMedianPropertyValueByYear
+
+Design Fact table FactSuburbPopulation
+
+Sprint 3: Build SSRS Report
+---------------------------
+
+Given suburb and city, display median rental value, median yearly income, and value changes of the property within 1 km radius.
+
+Given suburb and city, display local public transport within 1km radius - update data sets.
+
+Given suburb and city, display local schools within 1km radius.
+
+Given suburb and city, display crime rate within 1 km radius.
+
+Given suburb and city, display property value of the area in Column chart and line chart of 1 year, 5 years and 10 years value
+
+Given suburb and city, display median rental value, median yearly income, and value changes of the property within 1 km radius.
+
+
+Sprint 4: Build Power BI Dashboard from the designed Datawarehouse
+-------------------------------------------------------------------
+
+Given suburb and city, display median rental value, median yearly income, and value changes of the property within 1 km radius
+
+Given suburb and city, display local public transport within 1km radius
+
+Given suburb and city, display local schools within 1km radius
+
+Given suburb and city, display crime rate within 1 km radius
+
+Given suburb and city, display property value of the area within 1km radius in Column chart and line chart of 1 year, 5 years and 10 years value
+
+Build Monthly Property financial report on Power BI- rental income vs expense.
+
+Line chart of Property Value Changes in the suburb of 1,5 and 10 years on DW.
+
+Build Pie chart of all expense categories on DW.
+
+Build Crime rate Map around the given input property on Power BI.
+
+Build Custom map display Public transport within 1km radius of given input property
 
 
 
