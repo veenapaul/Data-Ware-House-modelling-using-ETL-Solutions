@@ -1,6 +1,6 @@
 # Property-Analysis
 
-# Steps followed
+# General Steps 
 1.Determine the business process (Analysing the requirements)
 
 
@@ -29,10 +29,10 @@
 
 6.Get Valuable insights from your data in DWH using Power BI visualisations
 
-Find the ER diagram for OLTP Database
-------------------------------------
+PROJECT STEP BY STEP
+--------------------
 
-![ER Diagram](https://user-images.githubusercontent.com/58709774/135180680-5b8cf072-e1b1-4f0f-91e0-6444a1784595.png)
+
 
 Find the Data Ware House diagram for DWH Modelling
 -------------------------------------------------
